@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body{
+	margin:0;
+}
+
+#wrap {
+	width: 100vw;
+	height: 100vh;
+}
+
+#title {
+	position: relative;
+	top: 3vw;
+	left: 3vw;
+	width: 300vw;
+	height: 6vw;
+    transform: translate(-3vw, -3vw);
+	background-color: rgba(245, 245, 245, 1);
+	font-size: 3.5vw;
+	text-align: center;
+	line-height: 1vw;
+	cursor: pointer
+}
+.image{
+	top: 7vh;
+	left: 4vw;
+	position: relative;
+	width: 115px;
+    height: 80px;
+    object-fit: fill;
+    transform: translate(-3vw, -3vw);
+	background-image: url('..//img/logo.png');
+}
+
+.box{
+	position:absolute;
+	border:4px dashed rgba(0,0,0,1);
+	float:left;
+	width:20%; height:5%;
+	text-align: center;
+	cursor:pointer
+}
+
+.box.a{
+	top:22%; left:40% 
+}
+.box.b{
+	top:30%; left:40% 
+}
+.box.c{
+	top:38%; left:40% 
+}
+.box.d{
+	top:46%; left:40% 
+}
+.box.e{
+	top:54%; left:40% 
+}
+
+.btn{
+	text-align:center;
+	position:absolute;
+	float:left;
+	top:70%; left:25%;
+	width:15%; height:5%;
+}
+
+.btn.a{
+	left:52%;
+}
+.btn.b{
+	left:34%;
+}

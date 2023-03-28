@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+}
+
+#wrap {
+	width: 100vw;
+	height: 100vh;
+}
+
+#title {
+	position: relative;
+	top: 3vw;
+	left: 3vw;
+	width: 300vw;
+	height: 6vw;
+    transform: translate(-3vw, -3vw);
+	background-color: rgba(245, 245, 245, 1);
+	font-size: 3.5vw;
+	text-align: center;
+	line-height: 1vw;
+	cursor: pointer
+}
+.image{
+	top: 7vh;
+	left: 4vw;
+	position: relative;
+	width: 115px;
+    height: 80px;
+    object-fit: fill;
+    transform: translate(-3vw, -3vw);
+	background-image: url('..//img/logo.png');
+}
+
+
+.sselect {
+	position: relative;
+	top: 4vw;
+	left: 5vw;
+	width: 30vw;
+	height: 3.5vw;
+	transform: translate(-3vw, -3vw);
+	font-size: 1.5vw;
+	cursor: pointer;
+	text-align: center;
+	line-height: 2.5vw;
+}
+.search {
+	position: relative;
+	top: 0vw;
+	left: 30vw;
+	width: 18vw;
+	height: 2vw;
+	transform: translate(-3vw, -3vw);
+	font-size: 3vw;
+	cursor: pointer;
+	text-align: center;
+	line-height: 2.5vw;
+}
+.searchb {
+	position: relative;
+	top: -1vw;
+	left: 60vw;
+	width: 4.5vw;
+	height: 2vw;
+	transform: translate(-3vw, -3vw);
+	font-size: 1.5vw;
+	cursor: pointer;
+	text-align: center;
+	line-height: 2.5vw;
+}
+
+
+.regist {
+	position: relative;
+	top: 0vw;
+	left: 60vw;
+	width: 5vw;
+	height: 3.5vw;
+	transform: translate(-3vw, -3vw);
+	font-size: 1.5vw;
+	cursor: pointer;
+	text-align: center;
+	line-height: 3.8vw;
+}
+
+.regist.on {
+	background-color: rgba(246, 246, 246, 1);
+	border: 0.3vw solid rgba(1, 1, 1, 1);
+}
+
+.regist.on:hover {
+	background-color: rgba(166, 166, 166, 1);
+	border: 0.3vw solid rgba(0, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+.zzim {
+	position: relative;
+	top: -4vw;
+	left: 75vw;
+	width: 5vw;
+	height: 3.5vw;
+	transform: translate(-3vw, -3vw);
+	font-size: 1.5vw;
+	cursor: pointer;
+	text-align: center;
+	line-height: 3.8vw;
+}
+
+.zzim.on {
+	background-color: rgba(246, 246, 246, 1);
+	border: 0.3vw solid rgba(1, 1, 1, 1);
+}
+
+.zzim.on:hover {
+	background-color: rgba(166, 166, 166, 1);
+	border: 0.3vw solid rgba(0, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+.end {
+	position: relative;
+	top: -7.5vw;
+	left: 88vw;
+	width: 7vw;
+	height: 1vw;
+	transform: translate(-3vw, -3vw);
+	font-size: 1vw;
+	cursor: pointer;
+	text-align: center;
+	line-height: 1vw;
+}
+
+.end.on {
+	background-color: rgba(246, 246, 246, 1);
+	border: 0.3vw solid rgba(1, 1, 1, 1);
+}
+
+.end.on:hover {
+	background-color: rgba(166, 166, 166, 1);
+	border: 0.3vw solid rgba(0, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+}
+.sign {
+	position: relative;
+	top: -7.5vw;
+	left: 88vw;
+	width: 7vw;
+	height: 1vw;
+	transform: translate(-3vw, -3vw);
+	font-size: 1vw;
+	cursor: pointer;
+	text-align: center;
+	line-height: 1vw;
+}
+
+.sign.on {
+	background-color: rgba(246, 246, 246, 1);
+	border: 0.3vw solid rgba(1, 1, 1, 1);
+}
+
+.sign.on:hover {
+	background-color: rgba(166, 166, 166, 1);
+	border: 0.3vw solid rgba(0, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+#menu {
+	width: 25%;
+	height: 100%;
+	background-color: rgba(232, 229, 107, 1);
+}
+
+#screen {
+	width: 85%;
+	height: 80%;
+	background-color: rgba(255, 255, 255, 1);
+}
+/* 이미지 체크박스 */
+.menu input[type=checkbox] {
+	display: none;
+}
+
+.menu input[type=checkbox]+label {
+	margin-left: 3px;
+	padding-left: 25px;
+	background-image: url('..//img/menu-open.svg');
+	background-repeat: no-repeat;
+}
+
+.menu input[type=checkbox]+label>span {
+	font-weight: bold;
+}
+
+.menu input[type=checkbox]:checked+label {
+	margin-left: 3px;
+	background-image: url('..//img/menu-close.svg');
+}
+/* 메뉴 펼침 - 체크박스 체크되면 메뉴목록 표시 */
+.menu input[type=checkbox]:checked ~.menuitems{
+	display: none;
+	
+}
+.menuitems {
+
+    margin-left: 20px;
+
+    width: 100px;
+
+    background:#408080;
+
+}
+.menuitems>li, .subdropmenu>li {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 50px;
+
+    background:#80ffff;
+
+    text-align: center;
+
+    line-height: 50px;
+
+}
+.menuitems>li:hover .subdropmenu {
+
+    left: 100px;
+
+}
+.menuitems>li a:hover {
+
+    display: block;
+
+    background: #ffffff;
+
+}
+.subdropmenu {
+
+    width: 100px;
+
+    background:  #408080;
+
+    position: absolute;
+
+    top: 0;
+
+    left: -9999px;
+
+}
+.subdropmenu>li a:hover {
+
+    display: block;
+
+    background:#ffffff;
+
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
